@@ -1,6 +1,16 @@
 # LD41
 Ludum Dare 41 - Combine 2 incompatible genres (e.g. turn based racing)
 
+
+Definitions
+---
+- Rooms only know about adjacent rooms...via an offset
+- Rooms are recreatable from a serializable base state, the serializable base state can change
+- One such change is a wall becoming a passage to adjacent room, the transition happens and is permanent, importantly, its not the case that a passage is a wall adjacent to another room's door, it is actually a passage
+- Another such change is a consumable item being consumed, it should change into empty space of some kind, so it wont be recreated later
+- You can only see one room at a time
+- Mini map is an actual minimap (displays rooms and connections, not cubes that makeup rooms)
+
 Metroidvania CCG
 ---
 - Either in platforming mode or map mode
@@ -10,7 +20,7 @@ Metroidvania CCG
 - One of the rooms in card pack will contain a card pack, so you can keep collecting
 - Camera follow player but sticks to room walls? Leaving room reset room state?
 -
-- Crazy stuff like moving rooms would be cool
+- Crazy stuff like moving rooms would be cool (have background stuff so you can tell rooms are moving)
 - Map could have danger level to encourage certain pathing
 - Character abilities
 
