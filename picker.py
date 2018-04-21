@@ -123,7 +123,14 @@ smallerGenreList = [
 "Platformer",
 "Interactive Fiction",
 "Card Game",
-"Sports"
+"Sports",
+"Artillery",
+"Strategy",
+"Rougelike",
+"Metroidvania",
+"Exploration",
+"Puzzle",
+"Turn Based"
  ]
 
 # ./picker.py thisArgCodeIsAWFUL
@@ -151,11 +158,19 @@ genreList = genres
 if 's' in sys.argv:
 	genreList = smallerGenreList
 
+thirdGenre = False
+if 't' in sys.argv:
+	thirdGenre = True
+
 for x in range(0, count):
+	result = ""
 	if aChanges:
 		a = random.choice(genreList)
 	b = random.choice(genreList)
 	if shouldInvertOrder:
-		print(b + " " + a)
+		result += b + " " + a
 	else:	
-		print(a + " " + b)
+		result += a + " " + b
+	if thirdGenre:
+		result += " " + random.choice(genreList)
+	print(result)

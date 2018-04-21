@@ -1,6 +1,9 @@
 # LD41
 Ludum Dare 41 - Combine 2 incompatible genres (e.g. turn based racing)
 
+Top Pick Combos
+---
+
 Combos
 ---
 Interactive Fiction CCG
@@ -20,6 +23,27 @@ Pool 3D Platformer
 Detective Voxel
 Rougelike Puzzle
 Survival Pong
+Role Playing Sandbox
+Typing Rhythm
+City Builder Solataire
+Spelling 4X
+Artillery Metroidvania
+Dungeon Crawl Artillery
+Marble Choices Matter
+Battle Royale Soccer
+Metroidvania Golf
+Nonviolent Indie Casual
+Artillery Spelling
+Platformer Racing
+Strategy Metroidvania
+Card Game Racing
+Sports Rougelike
+Dating Space Flight Sim
+Rougelike Skiball
+Battle Royale Marble
+Exploration Falling Sand
+Stealth Soccer
+Metroidvania Card Game
 
 Arbitrary Games/Genres List
 ---
