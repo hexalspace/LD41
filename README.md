@@ -1,68 +1,90 @@
 # LD41
 Ludum Dare 41 - Combine 2 incompatible genres (e.g. turn based racing)
 
+Metroidvania CCG
+---
+- Either in platforming mode or map mode
+- You collect card packs that contain rooms
+- You place rooms to get to marked map areas that have keys or are the final room (need keys to enter final room)
+- Infinite, if you get to goal, we simply spawn a new world with goals and keys that is bigger
+- One of the rooms in card pack will contain a card pack, so you can keep collecting
+- Camera follow player but sticks to room walls? Leaving room reset room state?
+-
+- Crazy stuff like moving rooms would be cool
+- Map could have danger level to encourage certain pathing
+- Character abilities
+
+First Steps
+---
+- Player character that moves at constant speeds all directions with arrow keys
+- Handle moving between rooms/room connection points
+
+Best Top Pick Combos
+---
+- Metroidvania CCG
+
 Top Pick Combos
 ---
+- Top Down Solataire Shooter
+- Fishing Card Game
+- Interactive Fiction CCG
+- Metroidvania Skiball
+- Interactive Fiction FPS
+- Golf Dungeon Crawl
+- Role Playing Sandbox
+- Spelling 4X
+- Artillery Metroidvania
+- City Builder Solataire
+- Marble Choices Matter
+- Metroidvania Golf
+- Artillery Spelling
+- Card Game Racing
+- Battle Royale Marble
+- Metroidvania Card Game
+- Match 3 Detective
+- Typing Tennis
+- Pool Rougelike
+- Open World Quicktime Events
+- FPS Skinner Box
+- Game Show Shooter
+- Open World Ski-ball 
 
 Combos
 ---
-- Interactive Fiction CCG
 - Point and Click Racing
-- Top Down Solataire Shooter
-- Fishing Card Game
 - PvP Marble
 - Sailing Stealth
 - Music Artillery
 - Voxel Management
 - Frogger Solataire
-- Metroidvania Skiball
-- Golf Dungeon Crawl
 - Text Based Music
-- Interactive Fiction FPS
 - Pool 3D Platformer
 - Detective Voxel
 - Rougelike Puzzle
 - Survival Pong
-- Role Playing Sandbox
 - Typing Rhythm
-- City Builder Solataire
-- Spelling 4X
-- Artillery Metroidvania
 - Dungeon Crawl Artillery
-- Marble Choices Matter
 - Battle Royale Soccer
-- Metroidvania Golf
 - Nonviolent Indie Casual
-- Artillery Spelling
 - Platformer Racing
 - Strategy Metroidvania
-- Card Game Racing
 - Sports Rougelike
 - Dating Space Flight Sim
 - Rougelike Skiball
-- Battle Royale Marble
 - Exploration Falling Sand
 - Stealth Soccer
-- Metroidvania Card Game
-- Match 3 Detective
 - Rhythm CCG
 - Racing City Builder
 - Tennis Horror
 - Match 3 Marble
 - Fighting Intentionally Awkward Controls
 - Marble Oregon Trail
-- Typing Tennis
-- Open World Ski-ball
 - BulletHell Management
 - Linear Choices Matter
 - Voxel Darts
 - Interactive Fiction Arcade
 - Artillery Mindsweeper
 - Tower Defense Text Adventure
-- Pool Rougelike
-- Open World Quicktime Events
-- FPS Skinner Box
-- Game Show Shooter
 
 Arbitrary Games/Genres List
 ---
