@@ -5,10 +5,13 @@ genres = [
 "Pong",
 "Pool",
 "Sports",
+"Darts",
+"Tag",
+"Team Based",
 "Golf",
 "MMORPG",
-"Oregon Trail",
-"Text Based",
+"OregonTrail",
+"Text-based",
 "Horror",
 "Survival",
 "Rougelike",
@@ -16,13 +19,13 @@ genres = [
 "Video",
 "Game Show",
 "Racing",
-"Topdown Racer",
+"Top-down Racer",
 "Battle Racer",
-"3D Sim Real Racer",
+"Realistic Racer",
 "Card Game",
 "CCG",
 "Multiplayer",
-"Solataire",
+"Solitaire",
 "FPS",
 "Walking Simulator",
 "Shooter",
@@ -30,21 +33,20 @@ genres = [
 "Logic",
 "Interactive Fiction",
 "Story",
-"Point and Click",
+"PointAndClick",
 "Platformer",
-"Role Playing",
+"RPG",
 "Fighting",
-"Simulation",
 "Stealth",
 "Hack And Slash",
 "Side Scroller",
 "Tower Defense",
 "Visual Novel",
-"THird Person",
+"Third Person",
 "Flight Sim",
-"Space Flight Sim",
-"Shoot em Up",
-"Beat em Up",
+"Spaceflight Sim",
+"Shoot-em-Up",
+"Beat-em-Up",
 "Open World",
 "Rhythm",
 "Nonviolent",
@@ -56,15 +58,17 @@ genres = [
 "Management",
 "City Builder",
 "Browser",
-"Business Simualation",
+"Business",
+"Simulation",
 "Clicker",
 "Battle Royale",
 "Artillery",
 "Art",
 "4X",
 "Drawing",
-"Indie Casual",
-"Free 2 Play",
+"Indie",
+"Casual",
+"F2P",
 "Atmospheric",
 "Difficult",
 "Co-op",
@@ -79,10 +83,10 @@ genres = [
 "BulletHell",
 "Minimalist",
 "Procedural",
-"ISometric",
+"Isometric",
 "Board Game",
 "Permadeath",
-"3d Platformer",
+"3D Platformer",
 "Metroidvania",
 "Economy",
 "Detective",
@@ -100,7 +104,7 @@ genres = [
 "Sailing",
 "VR",
 "Typing",
-"Intentionally Awkward Contrals",
+"Intentionally Awkward Controls",
 "Bikes",
 "Spelling",
 "Choices Matter",
@@ -113,7 +117,20 @@ genres = [
 "Marble",
 "Pinball",
 "Basketball",
-"Skiball" ]
+"Ski-ball",
+"Match 3",
+"Farming Sim",
+"Tennis",
+"Grid-based",
+"Text Adventure",
+"Baseball",
+"Mini-games",
+"Hockey",
+"Swimming",
+"Social",
+"Skinner Box",
+"Ad-based",
+"Particle-based"]
 
 smallerGenreList = [
 "Music",
@@ -133,7 +150,7 @@ smallerGenreList = [
 "Turn Based"
  ]
 
-# ./picker.py thisArgCodeIsAWFUL
+# ./picker.py Music 10 i s t
 
 import random
 import sys
@@ -144,7 +161,7 @@ newCount = [x for x in sys.argv[1:] if x.isdigit()]
 if len(newCount) > 0:
 	count = int(newCount[0])
 
-fixedA = [x for x in sys.argv[1:] if len(x) > 1]
+fixedA = [x for x in sys.argv[1:] if len(x) > 1 and not x.isdigit()]
 aChanges = True
 if len(fixedA) > 0:
 	aChanges = False
@@ -163,7 +180,7 @@ if 't' in sys.argv:
 	thirdGenre = True
 
 for x in range(0, count):
-	result = ""
+	result = "    " # prettier printing start with space
 	if aChanges:
 		a = random.choice(genreList)
 	b = random.choice(genreList)

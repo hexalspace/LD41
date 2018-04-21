@@ -44,6 +44,25 @@ Combos
 - Exploration Falling Sand
 - Stealth Soccer
 - Metroidvania Card Game
+- Match 3 Detective
+- Rhythm CCG
+- Racing City Builder
+- Tennis Horror
+- Match 3 Marble
+- Fighting Intentionally Awkward Controls
+- Marble Oregon Trail
+- Typing Tennis
+- Open World Ski-ball
+- BulletHell Management
+- Linear Choices Matter
+- Voxel Darts
+- Interactive Fiction Arcade
+- Artillery Mindsweeper
+- Tower Defense Text Adventure
+- Pool Rougelike
+- Open World Quicktime Events
+- FPS Skinner Box
+- Game Show Shooter
 
 Arbitrary Games/Genres List
 ---
