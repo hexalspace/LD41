@@ -81,7 +81,7 @@ genres = [
 "Procedural",
 "ISometric",
 "Board Game",
-"Perma Death",
+"Permadeath",
 "3d Platformer",
 "Metroidvania",
 "Economy",
@@ -91,7 +91,7 @@ genres = [
 "CRPG",
 "Score Attack",
 "Hunting",
-"Quick Time",
+"Quicktime Events",
 "Heist",
 "Historical",
 "Football",
@@ -100,7 +100,6 @@ genres = [
 "Sailing",
 "VR",
 "Typing",
-"AD",
 "Intentionally Awkward Contrals",
 "Bikes",
 "Spelling",
@@ -116,15 +115,47 @@ genres = [
 "Basketball",
 "Skiball" ]
 
-# Example usage, generate 10 combos
-# ./picker.py 10
+smallerGenreList = [
+"Music",
+"FPS",
+"Spelling",
+"Racing",
+"Platformer",
+"Interactive Fiction",
+"Card Game",
+"Sports"
+ ]
+
+# ./picker.py thisArgCodeIsAWFUL
 
 import random
 import sys
 
-count = int(sys.argv[1])
+count = 1
+
+newCount = [x for x in sys.argv[1:] if x.isdigit()]
+if len(newCount) > 0:
+	count = int(newCount[0])
+
+fixedA = [x for x in sys.argv[1:] if len(x) > 1]
+aChanges = True
+if len(fixedA) > 0:
+	aChanges = False
+	a = fixedA[0]
+
+shouldInvertOrder = False
+if 'i' in sys.argv:
+	shouldInvertOrder = True
+
+genreList = genres
+if 's' in sys.argv:
+	genreList = smallerGenreList
 
 for x in range(0, count):
-	a = random.choice(genres)
-	b = random.choice(genres)
-	print(a + " " + b)
+	if aChanges:
+		a = random.choice(genreList)
+	b = random.choice(genreList)
+	if shouldInvertOrder:
+		print(b + " " + a)
+	else:	
+		print(a + " " + b)

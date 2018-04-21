@@ -12,6 +12,14 @@ Sailing Stealth
 Music Artillery
 Voxel Management
 Frogger Solataire
+Metroidvania Skiball
+Golf Dungeon Crawl
+Text Based Music
+Interactive Fiction FPS
+Pool 3D Platformer
+Detective Voxel
+Rougelike Puzzle
+Survival Pong
 
 Arbitrary Games/Genres List
 ---
