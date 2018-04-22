@@ -2,6 +2,10 @@
 Ludum Dare 41 - Combine 2 incompatible genres (e.g. turn based racing)
 
 
+FORGET EVAHTHING
+---
+- Now doing Solataire Shooter
+
 Definitions
 ---
 - Rooms only know about adjacent rooms...via an offset
